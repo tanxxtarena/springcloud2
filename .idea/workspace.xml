@@ -46,6 +46,7 @@
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
@@ -60,6 +61,13 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="184">
               <caret line="47" column="31" selection-start-line="45" selection-start-column="8" selection-end-line="50" selection-end-column="21" />
+=======
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="85" column="4" selection-start-line="85" selection-start-column="4" selection-end-line="96" selection-end-column="12" />
+>>>>>>> dev
             </state>
           </provider>
         </entry>
@@ -197,11 +205,14 @@
               <item name="cloud2020" type="b2602c69:ProjectViewProjectNode" />
               <item name="cloud2020" type="462c0819:PsiDirectoryNode" />
             </path>
+<<<<<<< HEAD
             <path>
               <item name="cloud2020" type="b2602c69:ProjectViewProjectNode" />
               <item name="cloud2020" type="462c0819:PsiDirectoryNode" />
               <item name="cloud-provider-payment8001" type="462c0819:PsiDirectoryNode" />
             </path>
+=======
+>>>>>>> dev
           </expand>
           <select />
         </subPane>
@@ -328,12 +339,20 @@
       <option name="presentableId" value="Default" />
       <updated>1583974315781</updated>
       <workItem from="1583974322852" duration="8285000" />
+<<<<<<< HEAD
       <workItem from="1583982671522" duration="1355000" />
+=======
+      <workItem from="1583982671522" duration="1015000" />
+>>>>>>> dev
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="9640000" />
+=======
+    <option name="totallyTimeSpent" value="9300000" />
+>>>>>>> dev
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="7" />
@@ -589,6 +608,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="342">
           <caret line="95" column="18" lean-forward="true" selection-start-line="95" selection-start-column="18" selection-end-line="95" selection-end-column="18" />
         </state>
@@ -598,6 +618,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
           <caret line="47" column="31" selection-start-line="45" selection-start-column="8" selection-end-line="50" selection-end-column="21" />
+=======
+        <state relative-caret-position="72">
+          <caret line="85" column="4" selection-start-line="85" selection-start-column="4" selection-end-line="96" selection-end-column="12" />
+>>>>>>> dev
         </state>
       </provider>
     </entry>
