@@ -1,0 +1,36 @@
+1、初始化本地项目
+进入到项目的文件目录，打到git base终端
+git init
+
+2、添加文件到本地仓库
+git add .
+
+3、提交到本地仓库
+git commit -m 'init project'
+
+4、登录git官网，创建一个新的仓库，并复制对应的地址
+（配置好ssh,故复制ssh形式的仓库地址）
+https://github.com/tanxxtarena/springcloud2.git
+
+5、添加远程仓库地址到本地仓库
+ git remote add origin https://github.com/tanxxtarena/springcloud2.git
+ git remote -v 
+6、push到远程仓库
+igt push -u origin master
+
+git branch -b dev
+
+git checkout master
+
+git merge dev
+
+git add .
+
+git commit -m ''
+
+git pull
+
+git push
+
+
+
