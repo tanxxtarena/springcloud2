@@ -20,14 +20,16 @@ import org.springframework.web.client.RestTemplate;
 @RestController
 public class ConsumerController {
 
-    private static final String PAYMENT_URL = "http://localhost:8001";
+    //    private static final String PAYMENT_URL = "http://localhost:8001";
+    private static final String PAYMENT_URL = "http://CLOUD-PAYMENT-SERVICE";
+
     @Autowired
     private RestTemplate restTemplate;
 
     @GetMapping("/payment/create")
     public CommonResult<Payment> create(Payment payment) {
         log.info("-----客户端消息远程服务 {}-----", payment);
-        return restTemplate.postForObject(PAYMENT_URL + "/payment/crate", payment, CommonResult.class);
+        return restTemplate.postForObject(PAYMENT_URL + "/payment/create", payment, CommonResult.class);
     }
 
     @GetMapping("/payment/get/{id}")

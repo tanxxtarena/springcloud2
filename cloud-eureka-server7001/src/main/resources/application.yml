@@ -1,0 +1,20 @@
+server:
+  port: 7001
+
+#C:\Windows\System32\drivers\etc 下的hosts要配置主机名映射，有多少台集群就配置多少个
+#127.0.0.1 eureka7001.com
+#127.0.0.1 eureka7002.com
+#127.0.0.1 eureka7003.com
+
+eureka:
+  instance:
+    hostname: eureka7001.com #eureka服务端的实例名称
+  client:
+    #false表示不向注册中心注册自己
+    register-with-eureka: false
+    #flase表示自己端就是注册中心，我的职责就是维护服务实例，并不需要去检索服务
+    fetch-registry: false
+    service-url:
+      #设置与Eureka Server 交互的地址查询服务和注册服务都需要依赖这个地址，集群的时候，就是配置自己之外的EurekaServer服务器，相互注册，相互守望
+      defaultZone: http://eureka7002.com:7002/eureka/
+

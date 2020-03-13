@@ -1,5 +1,5 @@
 server:
-  port: 8001
+  port: 8002
 
 spring:
   application:
@@ -26,6 +26,6 @@ eureka:
 
   instance:
     #服务在EurekaServer上的显示名称
-    instance-id: payment8001
+    instance-id: payment8002
     #访问路径可以显示IP地址
     prefer-ip-address: true

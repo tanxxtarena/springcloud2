@@ -7,15 +7,15 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 /**
  * @author: tanxx
- * @create: 2020-03-12 09:29
+ * @create: 2020-03-13 09:38
  * @description:
  **/
 @SpringBootApplication
 @EnableEurekaClient
 @Slf4j
-public class PaymentApplication8001 {
+public class PaymentApplication8002 {
     public static void main(String[] args) {
-        SpringApplication.run(PaymentApplication8001.class, args);
-        log.info("---------- PaymentApplication8001 running -----------");
+        SpringApplication.run(PaymentApplication8002.class, args);
+        log.info("---------- PaymentApplication8002 running -----------");
     }
 }
