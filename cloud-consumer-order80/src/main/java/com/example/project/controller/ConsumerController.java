@@ -26,14 +26,24 @@ public class ConsumerController {
     @Autowired
     private RestTemplate restTemplate;
 
+    /**
+     *  http://localhost/consumer/payment/create
+     * @param payment
+     * @return
+     */
     @GetMapping("/payment/create")
     public CommonResult<Payment> create(Payment payment) {
         log.info("-----客户端消息远程服务 {}-----", payment);
         return restTemplate.postForObject(PAYMENT_URL + "/payment/create", payment, CommonResult.class);
     }
 
+    /**
+     *  http://localhost/consumer/payment/get/1
+     * @param id
+     * @return
+     */
     @GetMapping("/payment/get/{id}")
-    public CommonResult<Payment> create(@PathVariable("id") Long id) {
+    public CommonResult<Payment> get(@PathVariable("id") Long id) {
         return restTemplate.getForObject(PAYMENT_URL + "/payment/get/" + id, CommonResult.class);
     }
 

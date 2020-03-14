@@ -34,6 +34,11 @@ public class PaymentController {
         return CommonResult.error("插入数据库失败！SERVER_PORT:" + SERVER_PORT);
     }
 
+    /**
+     *  http://localhost:8002/payment/get/1
+     * @param id 对应数据库记录的id值
+     * @return
+     */
     @GetMapping("/get/{id}")
     public CommonResult get(@PathVariable("id") Long id) {
         log.info("---- 查询条件 {}", id);
