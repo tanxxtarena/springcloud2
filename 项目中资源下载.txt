@@ -1,0 +1,7 @@
+zipkin-server下载地址：
+https://dl.bintray.com/openzipkin/maven/io/zipkin/java/zipkin-server/2.12.9/
+
+执行: java -jar zipkin-server-2.12.9-exec.jar
+
+浏览器访问地址：
+http://localhost:9411/zipkin

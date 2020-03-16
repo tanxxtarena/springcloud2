@@ -8,6 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Date;
+
 /**
  * @author: tanxx
  * @create: 2020-03-12 09:52
@@ -49,5 +51,11 @@ public class PaymentController {
             return CommonResult.error("没有对应的记录 SERVER_PORT: " + SERVER_PORT);
         }
     }
+
+    @GetMapping("/gateway")
+     public CommonResult gateway() {
+        log.info(" ---------- gateway -----------");
+        return CommonResult.ok("GateWay SERVER_PORT:" + SERVER_PORT, new Date());
+     }
 
 }

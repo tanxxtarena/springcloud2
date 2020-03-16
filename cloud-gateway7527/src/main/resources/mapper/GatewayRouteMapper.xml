@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.project.dao.GatewayRouteDao">
+
+    <resultMap id="BaseResultMap" type="com.example.project.entities.GatewayRoute">
+        <id column="id" property="id" jdbcType="BIGINT" />
+        <id column="service_id" property="serviceId" jdbcType="VARCHAR" />
+        <id column="uri" property="uri" jdbcType="VARCHAR" />
+        <id column="predicates" property="predicates" jdbcType="VARCHAR" />
+        <id column="filters" property="filters" jdbcType="INTEGER" />
+        <id column="order" property="order" jdbcType="INTEGER" />
+        <id column="creator_id" property="creatorId" jdbcType="VARCHAR" />
+        <id column="create_date" property="createDate" jdbcType="TIMESTAMP" />
+        <id column="updateId" property="updateId" jdbcType="VARCHAR" />
+        <id column="update_date" property="updateDate" jdbcType="TIMESTAMP" />
+        <id column="remarks" property="remarks" jdbcType="VARCHAR" />
+        <id column="delFlag" property="delFlag" jdbcType="INTEGER" />
+    </resultMap>
+
+    <insert id="insert" parameterType="GatewayRoute" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO sys_gateway_route(server_id, uri, predicates, filters, order, creator_id, create_date, update_id, update_time, remarks, del_flag)
+         values (#{serverId}, #{uri}, #{predicates}, #{filters}, #{order}, #{creatorId}, #{createDate},#{updateId}, #{updateDate}, #{remarks}, #{delFlag});
+    </insert>
+
+    <update id="update" parameterType="GatewayRoute">
+        update sys_gateway_route set server_id = #{serverId}, uri = #{uri}, predicates = #{predicates} where id = #{id}
+    </update>
+
+    <select id="findAll" resultMap="BaseResultMap">
+        select * from sys_gateway_route;
+    </select>
+
+    <update id="delete" parameterType="GatewayRoute">
+        update sys_gateway_route set del_flag = 1 where id = #{id}
+    </update>
+
+
+
+</mapper>
