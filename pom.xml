@@ -20,6 +20,7 @@
         <module>cloud-provider-hystrix-payment8001</module>
         <module>cloud-consumer-feign-hystrix-order80</module>
         <module>cloud-gateway7527</module>
+        <module>cloudalibaba-nacos-service9001</module>
     </modules>
 
     <!--统一管理jar包版本-->
