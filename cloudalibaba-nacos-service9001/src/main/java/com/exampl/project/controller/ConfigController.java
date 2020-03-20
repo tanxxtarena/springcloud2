@@ -21,6 +21,10 @@ public class ConfigController {
     @Value("${config.info}")
     private String info;
 
+    /**
+     *  http://localhost:9001/config
+     * @return
+     */
     @GetMapping
     public String getInfo() {
         log.info("----------- ConfigController getInfo {}", info);
